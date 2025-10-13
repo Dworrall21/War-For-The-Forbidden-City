@@ -6,7 +6,7 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 1                        |
+| **Level**   | 2                        |
 | **Paths**   | Priest                   |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
@@ -29,13 +29,13 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 14    | From ancestry/path                      |
+| Health          | 18    | From ancestry/path 14+4                     |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 15 (17 w/ shield) | Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
-
+| Bonus Damage | 1d6 | Priest lvl 2|
 ---
 
 <details>
@@ -64,13 +64,16 @@
 
 ---
 
-#### 🙏 Novice Path — Priest (Level 1)
+#### 🙏 Novice Path — Priest (Level 2)
 - **Traditions Known:** Two
+- **Novice Spells:** Two
 - **Prayer (Reaction):** Use a reaction when you or a creature within 5 yd makes an attribute roll to grant 1 boon. Luck ends afterward.
 - **Holy Symbol (Charges = Level; 1/round):**  
   - **Holy Smite:** On a successful attack, deal an extra 3d6 damage.  
   - **Holy Healing:** Heal yourself or one ally within 5 yd for 3d6.  
   - **Holy Denunciation:** Present your holy symbol; Will vs target’s Will (1 boon vs supernatural). On success, target becomes *Held* (luck ends).
+- **Shared Recovery:**
+  - You can use an action to heal half your damage total and enable one other creature within 5 yards to heal half their damage total. Once you use this talent, you lose access to it until after you rest.
 
 ---
 
@@ -126,7 +129,9 @@
 
 | Tradition | Spell | Casting | Time | Duration | Effect |
 |-----------|-------|---------|------|----------|--------|
-| Psychomancy | *Dancing Weapon* | 3 | Action | 1 min | Target weapon hovers, can attack using Will, +2d6 dmg, counts as off-hand. Ends if >10 yd away. |
+| Psychomancy | *Dancing Weapon* | 3 | Action | 1 min | The target weapon leaps into the air and hovers there. When you cast the spell and at the start of each of your turns if you lack the confused, controlled, stunned, and unconscious afflictions, you can move the target weapon up to 10 yards. If you move the target more than 10 yards away from you, the spell ends early and the weapon falls to the ground.
+
+You can attack with the target weapon as if you were holding it, but you use Will in place of the attribute you normally use and the attack deals an extra 2d6 damage. Finally, until the spell ends, the target counts as an off-hand weapon for the purpose of attacking with two weapons. |
 | Psychomancy | Mental Stowaway | 1 | Action | 24 hr | Int vs target Will. On success, know location for 24h and can perceive from their body. Gain 1 boon vs them. |
 
 </details>
