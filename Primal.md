@@ -2,221 +2,199 @@
 
 ## Novice Spells
 
-### Beast Speech
-**Castings:** 3  
+### Form of the Hunting Beast
+**Castings:** 1  
 **Target:** You  
 **Duration:** 1 hour  
 
-You gain the ability to speak with and understand beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but they can give you information about nearby locations and creatures.
+You, along with everything you wear and carry, transform into an enormous beast that looks something like a wolf. You remain in this form for the duration, but the spell ends early if you become incapacitated. In this form, you lose the ability to speak and make use of your equipment. Make the following changes to your rules until the spell ends. When it ends, you heal 2d6 damage.
+
+You can expend a casting of this spell to heal 4d6 damage instead of producing the spell’s normal effects.
+
+- **Defense:** 15  
+- **Health:** 30  
+- **Attributes:** Strength 14 (+4), Agility 10 (+0)  
+- **Size:** 1  
+- **Speed:** 6  
+- **Senses:** Keen Hearing, Keen Scent, and Keen Vision  
+- **Natural Weapons:** You can use your teeth and claws as a single natural weapon that deals 4d6 damage. When you attack with your natural weapon, you roll with 1 boon.  
+- **Tongue of Beasts:** You can cast Primal spells without having to speak.
 
 ---
 
-### Entangle
+### Run Them Down
 **Castings:** 1  
-**Target:** One Size 5 space on the ground within 10 yards  
+**Target:** One flesh-and-blood creature within 5 yards  
+**Duration:** Instantaneous  
+
+The target senses its imminent demise. Make a Will roll against the target’s Will. On a success, the target becomes frightened of you until the start of your next turn. The target then moves its Speed away from you and you can move up to twice your Speed to follow. You have the Slippery trait for this movement. If you end your movement where you can reach it, you can make a melee attack against it, rolling with 1 boon. If you get a failure on your Will roll, you regain the casting of this spell after 1 minute.
+
+---
+
+### Speed of the Cheetah
+**Castings:** 3, reaction when you move 1 yard  
+**Target:** You  
 **Duration:** 1 minute  
 
-Grasses and vines sprout from the ground and ensnare creatures in the target area. Each creature in the area makes a Strength roll. On a failure, the creature becomes held (luck ends). While held in this way, the creature is slowed. At the end of each round, held creatures make a Strength roll to end the affliction.
+Increase your Speed by 2 and gain the Slippery trait. When you run, you quadruple your Speed instead of tripling.
 
 ---
 
-### Goodberry
-**Castings:** 3  
-**Target:** One handful of berries you touch  
-**Duration:** 24 hours  
+### Stalk Prey
+**Castings:** 1, reaction when you attack  
+**Target:** The target of your attack  
+**Duration:** 1 minute  
 
-You imbue the target berries with magical nourishment. Up to 10 berries become goodberries. A creature can use an action to eat one berry, which restores 1d6 Health and provides enough nourishment to sustain it for 1 day.
+You fill your nostrils with the stink of your enemy. The target rolls to attack you with 1 bane. You roll to attack the target with 3 boons and one attack you make against it each round deals an extra 2d6 damage. Finally, whenever the target moves, you can use a reaction to move up to half your Speed. The spell ends early if you become unconscious.
 
 ---
 
-### Predator’s Senses
-**Castings:** 3  
+### Tooth and Claw
+**Castings:** 1  
+**Target:** One creature in reach  
+**Duration:** Instantaneous  
+
+You throw yourself at the target, clawing and biting it. Make an unarmed strike or an attack with your natural weapons. You roll with 1 boon. On a success, the target takes an extra 3d6 damage. On a critical success, the target makes a Will roll. On a failure, it becomes frightened of you until the end of your next turn. After the attack, your melee attacks deal an extra 2d6 damage until the end of your next turn.
+
+---
+
+### Wild Vigor
+**Castings:** 1  
 **Target:** You  
 **Duration:** 1 hour  
 
-You heighten your senses to those of a predator. Until the spell ends, you gain darksight out to 30 yards, advantage on Perception rolls, and can smell hidden or invisible creatures within 10 yards.
-
----
-
-### Shillelagh
-**Castings:** 1  
-**Target:** One club or staff you are holding  
-**Duration:** 1 minute  
-
-The target weapon becomes imbued with primal power. You can use Will in place of the attribute you would normally use to attack with the weapon, you roll with 1 boon, and the attack deals an extra 1d6 damage. The weapon is considered magical for the duration.
-
----
-
-### Speak with Animals
-**Castings:** 3  
-**Target:** You  
-**Duration:** 10 minutes  
-
-You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but they can give you information about nearby locations and creatures.
+Hunger grows inside you and images of predators killing their prey dance through your mind. Increase your Health by 10, make Strength rolls with 1 boon, impose 1 bane on rolls against your Strength, and increase your supply of Bonus Damage dice by 1. The spell ends early if you become unconscious.
 
 ---
 
 ## Expert Spells
 
-### Animal Friendship
-**Castings:** 1  
-**Target:** One beast within 10 yards  
-**Duration:** 1 hour  
-
-You convince the target beast that you mean it no harm. The beast makes a Will roll. On a failure, it becomes charmed (luck ends). While charmed in this way, the beast regards you as a friendly acquaintance.
-
----
-
-### Barkskin
-**Castings:** 3  
-**Target:** You or one creature within 5 yards  
-**Duration:** 1 hour  
-
-The target’s skin becomes as tough as bark. Until the spell ends, the target’s Defense can’t be lower than 15, regardless of what armor it is wearing.
-
----
-
-### Conjure Animals
-**Castings:** 1  
-**Target:** One empty Size 5 space within 20 yards  
-**Duration:** 1 hour  
-
-You summon fey spirits that take the form of beasts. Choose one of the following options for what appears:
-
-- One beast of Size 2 or smaller  
-- Two beasts of Size 1 or smaller  
-- Four beasts of Size ½ or smaller  
-
-Each beast acts on your turn and obeys your verbal commands. The GM has the creatures’ statistics.
-
----
-
-### Enhance Ability
-**Castings:** 3  
-**Target:** One creature within 5 yards  
-**Duration:** Concentration, up to 1 hour  
-
-You bestow magical enhancement upon the target. Choose one of the following effects:
-
-- **Bear’s Endurance:** The target makes Strength rolls with 1 boon.  
-- **Cat’s Grace:** The target makes Agility rolls with 1 boon and doesn’t take damage from falling 20 feet or less.  
-- **Eagle’s Splendor:** The target makes Will rolls with 1 boon.  
-- **Fox’s Cunning:** The target makes Intellect rolls with 1 boon.  
-- **Owl’s Wisdom:** The target makes Perception rolls with 1 boon.  
-- **Bull’s Strength:** The target makes Strength rolls with 1 boon and its carrying capacity doubles.
-
----
-
-### Flame Blade
+### Howl of the Beast
 **Castings:** 1  
 **Target:** You  
-**Duration:** 10 minutes  
+**Duration:** 1 hour  
 
-A fiery blade appears in your hand. The blade is a melee weapon that uses your Will for attack rolls, has the finesse property, deals 3d6 damage on a hit, and sheds bright light in a 10-yard radius and dim light for an additional 10 yards.
+A terrible howl rips free from your throat as you, along with everything you wear and carry, transform into a beast that looks something like an enormous bear. You remain in this form for the duration, but the spell ends early if you become incapacitated. In this form, you lose the ability to speak and make use of your equipment. Make the following changes to your rules until the spell ends. When it ends, you heal 6d6 damage.
+
+- **Defense:** 15  
+- **Health:** 60  
+- **Attributes:** Strength 15 (+5), Agility 12 (+2)  
+- **Size:** 2  
+- **Speed:** 6  
+- **Senses:** Keen Hearing, Keen Scent, and Keen Vision  
+- **Natural Weapons:** You can use your teeth and claws as a single natural weapon that deals 5d6 damage and has the Brutal trait. When you attack with your natural weapon, you roll with 1 boon.  
+- **Tongue of Beasts:** You can cast Primal spells without having to speak.
+
+You can expend a casting of this spell to heal 9d6 damage instead of producing the spell’s normal effects.
 
 ---
 
-### Spike Growth
-**Castings:** 1  
-**Target:** One Size 10 space on the ground within 30 yards  
-**Duration:** 10 minutes  
+### Primal Recovery
+**Castings:** 1, reaction when you are harmed  
+**Target:** You  
+**Duration:** Instantaneous  
 
-The ground twists and sprouts hard spikes and thorns. The area becomes difficult terrain. When a creature moves into or within the area, it takes 2d6 damage for every 5 yards it travels.
+Power flows through you, restoring and protective. You gain the Slippery trait until the start of your next turn, move 10 yards, and heal 9d6 damage.
+
+---
+
+### Rending Claws
+**Castings:** 1  
+**Target:** One creature in reach  
+**Duration:** Instantaneous  
+
+You sweep your clawed hands at the target, back and forth. Three times, make a Strength or Agility roll with 1 boon against the target’s Defense. On the first success, the target takes 9d6 damage. On the second success, the target takes 6d6 damage. On the third success, the target takes 3d6 damage. On any critical success, the target takes an extra 1d6 damage. If the target becomes injured from this damage, it falls prone.
+
+---
+
+### Snapping Fangs
+**Castings:** 1  
+**Target:** You  
+**Duration:** 1 minute  
+
+You snarl as you make a melee attack. You roll with 1 boon and the attack deals an extra 4d6 damage. Then, for the duration, whenever an enemy in reach attacks you, you can use a reaction to attack that enemy.
+
+---
+
+### Springing Attack
+**Castings:** 1  
+**Target:** One creature within 10 yards  
+**Duration:** Instantaneous  
+
+You crouch and spring forward. Increase your Speed by 10 until the end of your next turn. You can move as part of resolving the spell’s effect. If you can reach the target, make a melee attack against it. You roll with 1 boon. On a success, the target takes an extra 6d6 damage and becomes vulnerable (luck ends). On a failure, you increase your supply of Bonus Damage dice by 4 until the end of your next turn.
+
+---
+
+### Wild Frenzy
+**Castings:** 1  
+**Target:** You  
+**Duration:** 1 hour  
+
+You throw your head back and howl. Whenever you make a melee attack and the number rolled is 5 or less, you can roll an additional d20 and add it to the result. You increase your supply of Bonus Damage dice by 3 and you impose 1 bane on rolls to attack you. The spell ends early if you become unconscious.
 
 ---
 
 ## Master Spells
 
-### Animal Shapes
-**Castings:** 1  
-**Target:** Any number of willing creatures within 20 yards  
-**Duration:** Concentration, up to 1 hour  
-
-You transform each target into a beast of your choice whose Size is no larger than the target’s and whose challenge rating is 4 or lower. The transformation lasts for the duration, or until the creature drops to 0 Health or dies. The target’s game statistics, including mental ability scores, are replaced by the statistics of the chosen beast. It retains its alignment and personality.
-
----
-
-### Commune with Nature
+### Primal Avatar
 **Castings:** 1  
 **Target:** You  
-**Duration:** Concentration, up to 1 minute  
+**Duration:** 1 hour  
 
-You become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles. Underground, the radius is limited to 300 feet. You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area:
+You swell in size as primal magic flows into you and makes you the champion of beasts. You, along with everything you wear and carry, transform into a terrifying beast that looks something like a gigantic tiger. You remain in this form for the duration, but the spell ends early if you become incapacitated. In this form, you lose the ability to speak and make use of your equipment. Make the following changes to your rules until the spell ends. When it ends, you heal 10d6 damage.
 
-- Terrain and bodies of water  
-- Prevalent plants, minerals, animals, or peoples  
-- Powerful celestials, fey, fiends, elementals, or undead  
-- Influence from other planes of existence  
-- Buildings  
+- **Defense:** 18  
+- **Health:** 90  
+- **Attributes:** Strength 16 (+6), Agility 14 (+4)  
+- **Size:** 2  
+- **Speed:** 8 (Strider)  
+- **Senses:** Keen Hearing, Keen Scent, and Keen Vision  
+- **Natural Weapons:** You can use your teeth and claws as a single natural weapon that deals 6d6 damage. When you attack with your natural weapon, you roll with 1 boon. On a critical success, the target also becomes frightened of you (luck ends).  
+- **Tongue of Beasts:** You can cast Primal spells without having to speak.
 
----
-
-### Conjure Elemental
-**Castings:** 1  
-**Target:** One empty Size 3 space within 30 yards  
-**Duration:** Concentration, up to 1 hour  
-
-You summon an elemental of air, earth, fire, or water. The elemental acts on your turn and follows your verbal commands. If you lose concentration, the elemental doesn’t disappear but may act against you.
-
-- **Air Elemental:**  
-  - **Defense:** 14  
-  - **Health:** 90  
-  - **Attributes:** Strength 14 (+4), Agility 18 (+8), Intellect 10 (+0), Will 12 (+2)  
-  - **Size:** 3  
-  - **Speed:** 10 (Fly)  
-  - **Immune:** prone, grappled, restrained  
-  - **Melee Attack — Slam:** Agility (+8) (3d6). On a critical success, the target is pushed 10 yards.  
-
-- **Earth Elemental:**  
-  - **Defense:** 16  
-  - **Health:** 120  
-  - **Attributes:** Strength 20 (+10), Agility 8 (–2), Intellect 8 (–2), Will 12 (+2)  
-  - **Size:** 3  
-  - **Speed:** 6 (Burrow)  
-  - **Immune:** prone  
-  - **Melee Attack — Slam:** Strength (+10) (4d6). On a critical success, the target is knocked prone.  
-
-- **Fire Elemental:**  
-  - **Defense:** 13  
-  - **Health:** 80  
-  - **Attributes:** Strength 12 (+2), Agility 16 (+6), Intellect 10 (+0), Will 12 (+2)  
-  - **Size:** 3  
-  - **Speed:** 8  
-  - **Immune:** prone, grappled, restrained  
-  - **Melee Attack — Touch:** Agility (+6) (3d6 fire). On a critical success, the target catches fire (luck ends).  
-
-- **Water Elemental:**  
-  - **Defense:** 14  
-  - **Health:** 100  
-  - **Attributes:** Strength 16 (+6), Agility 12 (+2), Intellect 10 (+0), Will 12 (+2)  
-  - **Size:** 3  
-  - **Speed:** 6 (Swim)  
-  - **Immune:** prone  
-  - **Melee Attack — Slam:** Strength (+6) (3d6). On a critical success, the target is pushed 10 yards and knocked prone.
+You can expend a casting of this spell to heal 15d6 damage and regain 2d6 Health instead of producing the spell’s normal effects.
 
 ---
 
-### Earthquake
+### Tear Free the Still-Beating Heart
 **Castings:** 1  
-**Target:** One Size 20 space within 100 yards  
-**Duration:** Concentration, up to 1 minute  
+**Target:** One creature in reach  
+**Duration:** Instantaneous  
 
-You create a seismic disturbance centered on a point you can see within range. For the duration, the ground shakes violently and each creature on the ground in the area makes an Agility roll at the start of its turn. On a failure, it falls prone. The spell can damage structures, at the GM’s discretion.
+Your clawed hand shoots out and punches through the target’s chest. The target takes 15d6 damage. If the damage injures the target, it takes an extra 10d6 damage and becomes weakened (luck ends). If the target becomes incapacitated by this damage, you rip free its heart (or similar organ) and the target dies. Each creature that sees you kill the target in this way makes a Will roll. On a failure, it becomes frightened of you (luck ends).
 
 ---
 
-### Shapechange
-**Castings:** 1  
+### Taste Your Blood
+**Castings:** 3  
+**Target:** One creature in reach  
+**Duration:** 1 minute  
+
+You throw yourself at the target. The target takes 5d6 damage and you make a Strength or Agility roll with 1 boon against its Defense. On a success, the target takes an extra 5d6 damage. On a critical success, it takes an extra 10d6 damage instead. Additionally, for the spell’s duration, you add 10 to the result of your rolls to attack the target.
+
+---
+
+### Throat Rip
+**Castings:** 1, reaction when a flesh-and-blood creature in reach becomes injured  
+**Target:** The creature that enabled the casting of this spell  
+**Duration:** Instantaneous  
+
+You lunge for the enemy’s throat. Make a Strength roll with 1 boon against its Agility. On a success, the target takes 8d6 damage, falls prone, and makes a Will roll. On a failure, the creature becomes stunned until the end of your next turn.
+
+---
+
+### Wicked Thorns
+**Castings:** 1, reaction when you are attacked  
 **Target:** You  
-**Duration:** Concentration, up to 1 hour  
+**Duration:** 1 minute  
 
-You assume the form of a different creature for the duration. The transformation works like *animal shapes*, except that you can transform into any creature, not just beasts, with a challenge rating equal to or less than your level. You retain your alignment and personality.
+Sharp thorns appear all over your body. Whenever a creature attacks you with an unarmed attack or a melee weapon and the weapon lacks the Long property, the creature takes 3d6 damage and becomes vulnerable (luck ends).
 
 ---
 
-### Storm of Vengeance
+### Winnow the Weak
 **Castings:** 1  
-**Target:** One Size 20 space within 100 yards  
-**Duration:** Concentration, up to 1 minute  
+**Target:** Up to five creatures or objects within 5 yards  
+**Duration:** Instantaneous  
 
-You summon a churning storm of acid rain, lightning, and strong winds. Each creature in the area when the storm appears makes a Strength roll. On a failure, it takes 10d6 damage and is pushed 10 yards away from the center. At the start of each creature’s turn while in the storm, it takes 5d6 damage.
+Wild fury overtakes you, causing you to become a whirlwind of claws and teeth. Your Speed increases by 5 until the end of your next turn. Each target takes 7d6 damage. Then, for each target separately, make a Strength roll against its Defense. On a success, the target takes an extra 7d6 damage. On a critical success, the target takes an extra 10d6 damage instead.
