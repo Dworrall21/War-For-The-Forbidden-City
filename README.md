@@ -36,7 +36,6 @@ This repository contains quick references, character sheets, equipment lists, an
 - [Eldritch](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Eldritch.md)  
 - [Enchantment](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Enchantment.md)  
 - [Evocation](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Evocation.md)  
-- [Faerie Magic](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Faerie%20Magic.md)  
 - [Geomancy](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Geomancy.md)  
 - [High One Magic](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/High%20One%20Magic.md)  
 - [Hydromancy](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Hydromancy.md)  
