@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Egilhardt Boms – Editable Character Sheet</title>
+  <style>
+    :root{
+      --bg:#0f172a; /* slate-900 */
+      --card:#111827; /* gray-900 */
+      --muted:#94a3b8; /* slate-400 */
+      --text:#e5e7eb; /* gray-200 */
+      --accent:#22d3ee; /* cyan-400 */
+      --accent2:#a78bfa; /* violet-400 */
+      --ok:#34d399; /* green-400 */
+      --warn:#f59e0b; /* amber-500 */
+      --danger:#f87171; /* red-400 */
+      --border:#1f2937; /* gray-800 */
+    }
+    html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg, #0b1020, #0e1324 55%, #0b1020);color:var(--text);font:16px/1.5 system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji"}
+    .container{max-width:1100px;margin:32px auto;padding:0 16px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+    h1{font-size:28px;margin:0;letter-spacing:.5px}
+    .badge{display:inline-flex;gap:8px;flex-wrap:wrap}
+    .pill{border:1px solid var(--border);background:rgba(255,255,255,.04);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:12px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .card{grid-column:span 12;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:16px;padding:16px}
+    @media(min-width:900px){.span-4{grid-column:span 4}.span-6{grid-column:span 6}.span-8{grid-column:span 8}.span-12{grid-column:span 12}}
+    .card h2{font-size:16px;margin:0 0 10px 0;color:#cbd5e1;letter-spacing:.4px}
+    table{width:100%;border-collapse:separate;border-spacing:0}
+    th,td{padding:10px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+    th{color:#93c5fd;text-align:left;font-weight:600}
+    td input, td select, td textarea{width:100%;padding:8px 10px;border-radius:10px;background:#0b1020;color:var(--text);border:1px solid var(--border)}
+    .toolbar{display:flex;flex-wrap:wrap;gap:8px}
+    button{background:linear-gradient(180deg, var(--accent), var(--accent2));color:#0b1020;border:none;border-radius:12px;padding:10px 14px;font-weight:700;cursor:pointer}
+    button.secondary{background:#0b1020;color:var(--text);border:1px solid var(--border)}
+    .muted{color:var(--muted)}
+    .footer{opacity:.7;margin-top:12px;font-size:12px}
+    .right{float:right}
+    details{border:1px solid var(--border);border-radius:12px;padding:10px;background:#0b1020}
+    summary{cursor:pointer}
+    .tag{display:inline-block;background:#0b1020;border:1px solid var(--border);padding:4px 8px;border-radius:999px;margin:2px;color:#cbd5e1;font-size:12px}
+    .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    .kpi .box{background:#0b1020;border:1px solid var(--border);padding:10px;border-radius:12px;text-align:center}
+    .box h3{margin:0;color:#93c5fd;font-size:13px}
+    .box p{margin:4px 0 0 0;font-size:18px;font-weight:800}
+    .sr{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}
+    .row-actions{display:flex;gap:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>⚙️ Egilhardt Boms <span class="muted" style="font-weight:400">— Editable Character Sheet</span></h1>
+        <div class="badge">
+          <span class="pill" id="pill-ancestry">Human</span>
+          <span class="pill" id="pill-level">Level 1</span>
+          <span class="pill">Priest</span>
+          <span class="pill">Psychomancy</span>
+          <span class="pill">Technomancy</span>
+        </div>
+      </div>
+      <div class="toolbar">
+        <button id="btn-save">Save</button>
+        <button class="secondary" id="btn-load">Load</button>
+        <button class="secondary" id="btn-export-md">Export Markdown</button>
+        <button class="secondary" id="btn-export-json">Export JSON</button>
+      </div>
+    </header>
+
+    <section class="grid">
+      <div class="card span-4">
+        <h2>Overview</h2>
+        <table>
+          <tr><th>Name</th><td><input id="name" value="Egilhardt Boms"/></td></tr>
+          <tr><th>Ancestry</th><td><input id="ancestry" value="Human"/></td></tr>
+          <tr><th>Level</th><td><input id="level" type="number" min="1" value="1"/></td></tr>
+          <tr><th>Path(s)</th><td><input id="paths" value="Priest"/></td></tr>
+          <tr><th>Traditions</th><td><input id="traditions" value="Psychomancy, Technomancy"/></td></tr>
+          <tr><th>Languages</th><td><input id="languages" value="Common, (choose), (choose)"/></td></tr>
+          <tr><th>Profession</th><td><input id="profession" value="Mercenary"/></td></tr>
+        </table>
+      </div>
+
+      <div class="card span-4">
+        <h2>Attributes</h2>
+        <table id="tbl-attributes">
+          <tr><th>Attribute</th><th>Score</th><th>Mod</th></tr>
+          <tr><td>Strength</td><td><input type="number" value="12"/></td><td><input type="number" value="2"/></td></tr>
+          <tr><td>Agility</td><td><input type="number" value="10"/></td><td><input type="number" value="0"/></td></tr>
+          <tr><td>Intellect</td><td><input type="number" value="9"/></td><td><input type="number" value="-1"/></td></tr>
+          <tr><td>Will</td><td><input type="number" value="14"/></td><td><input type="number" value="4"/></td></tr>
+        </table>
+      </div>
+
+      <div class="card span-4">
+        <h2>Derived Stats</h2>
+        <div class="kpi">
+          <div class="box"><h3>Health</h3><p><input id="health" type="number" value="14"/></p></div>
+          <div class="box"><h3>Healing Rate</h3><p><input id="healingRate" type="number" value="3"/></p></div>
+          <div class="box"><h3>Defense</h3><p><input id="defense" type="number" value="15"/></p></div>
+          <div class="box"><h3>Speed</h3><p><input id="speed" type="number" value="5"/></p></div>
+        </div>
+        <div style="margin-top:10px" class="muted">Notes: Natural Defense 9; Defense 17 w/ shield; Mail armor.</div>
+      </div>
+
+      <div class="card span-12">
+        <h2>Attacks</h2>
+        <table id="tbl-attacks">
+          <tr><th>Attack</th><th>Attribute</th><th>Boons</th><th>Damage</th><th>Notes</th><th class="sr">Actions</th></tr>
+          <tr>
+            <td><input value="Melee (Multitool Axe)"/></td>
+            <td><input value="Will"/></td>
+            <td><input type="number" value="1"/></td>
+            <td><input value="3d6"/></td>
+            <td><input value="2-Hand, Brutal, Large, Slow"/></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Melee (Multitool Polearm)"/></td>
+            <td><input value="Will"/></td>
+            <td><input type="number" value="1"/></td>
+            <td><input value="3d6"/></td>
+            <td><input value="2-Hand, Long, Slow"/></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Melee (Multitool Flail)"/></td>
+            <td><input value="Will"/></td>
+            <td><input type="number" value="1"/></td>
+            <td><input value="2d6"/></td>
+            <td><input value="Bludgeoning, Disarming, Slow"/></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Melee (Multitool Longsword)"/></td>
+            <td><input value="Will"/></td>
+            <td><input type="number" value="1"/></td>
+            <td><input value="2d6"/></td>
+            <td><input value="Slashing, Slow, Versatile"/></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Ranged (Crossbow)"/></td>
+            <td><input value="Agility"/></td>
+            <td><input type="number" value="0"/></td>
+            <td><input value="2d6"/></td>
+            <td><input value="Brutal, Large, Reload, Range 20"/></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+        </table>
+        <div style="margin-top:10px"><button class="secondary" onclick="addRow('tbl-attacks',5)">+ Add Attack</button></div>
+      </div>
+
+      <div class="card span-6">
+        <h2>Talents</h2>
+        <table id="tbl-talents">
+          <tr><th>Source</th><th>Title</th><th>Type</th><th>Description</th><th class="sr">Actions</th></tr>
+          <tr>
+            <td><input value="Ancestry (Human)"/></td>
+            <td><input value="Ability Increases"/></td>
+            <td><input value="Passive"/></td>
+            <td><textarea>+1 to two different attributes</textarea></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Priest (Novice)"/></td>
+            <td><input value="Prayer (Reaction)"/></td>
+            <td><input value="Reaction"/></td>
+            <td><textarea>Use a reaction when you or a creature within 5 yd makes an attribute roll to grant 1 boon; luck ends.</textarea></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Priest (Novice)"/></td>
+            <td><input value="Holy Symbol"/></td>
+            <td><input value="Charges"/></td>
+            <td><textarea>Holy Smite (extra 3d6 on hit), Holy Healing (3d6 to self/ally within 5 yd), Holy Denunciation (Will vs Will; 1 boon vs supernatural; on success: Held).</textarea></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Psychomancy"/></td>
+            <td><input value="Shielded Mind"/></td>
+            <td><input value="Magical"/></td>
+            <td><textarea>If uninjured and not confused/controlled/stunned/unconscious, impose 1 bane vs rolls against your Intellect/Will.</textarea></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+          <tr>
+            <td><input value="Technomancy"/></td>
+            <td><input value="Ultimate Tool"/></td>
+            <td><input value="Magical"/></td>
+            <td><textarea>Magical tool acts as toolkit & one-/two-handed weapon; +1 boon on relevant rolls; returns if lost after 1 hour.</textarea></td>
+            <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+          </tr>
+        </table>
+        <div style="margin-top:10px"><button class="secondary" onclick="addRow('tbl-talents',4)">+ Add Talent</button></div>
+      </div>
+
+      <div class="card span-6">
+        <h2>Spells</h2>
+        <details open>
+          <summary><strong>Novice</strong></summary>
+          <table id="tbl-spells-novice">
+            <tr><th>Tradition</th><th>Spell</th><th>Cast</th><th>Time</th><th>Duration</th><th>Effect</th><th class="sr">Actions</th></tr>
+            <tr>
+              <td><input value="Psychomancy"/></td>
+              <td><input value="Dancing Weapon"/></td>
+              <td><input type="number" value="3"/></td>
+              <td><input value="Action"/></td>
+              <td><input value="1 min"/></td>
+              <td><textarea>Target weapon hovers; attack using Will; +2d6 damage; counts as off-hand; ends if >10 yd away.</textarea></td>
+              <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+            </tr>
+            <tr>
+              <td><input value="Psychomancy"/></td>
+              <td><input value="Mental Stowaway"/></td>
+              <td><input type="number" value="1"/></td>
+              <td><input value="Action"/></td>
+              <td><input value="24 hr"/></td>
+              <td><textarea>Int vs target Will; on success know location for 24h and can perceive from their body; gain 1 boon vs them.</textarea></td>
+              <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+            </tr>
+          </table>
+          <div style="margin-top:10px"><button class="secondary" onclick="addRow('tbl-spells-novice',6)">+ Add Novice Spell</button></div>
+        </details>
+        <details style="margin-top:10px" open>
+          <summary><strong>Expert</strong></summary>
+          <table id="tbl-spells-expert">
+            <tr><th>Tradition</th><th>Spell</th><th>Cast</th><th>Time</th><th>Duration</th><th>Effect</th><th class="sr">Actions</th></tr>
+            <tr>
+              <td><input value="Technomancy"/></td>
+              <td><input value="Gizmo"/></td>
+              <td><input type="number" value="1"/></td>
+              <td><input value="Action"/></td>
+              <td><input value="8 hr"/></td>
+              <td><textarea>Create a device with two novice spells; grants 1 boon while it has a casting left.</textarea></td>
+              <td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>
+            </tr>
+          </table>
+          <div style="margin-top:10px"><button class="secondary" onclick="addRow('tbl-spells-expert',6)">+ Add Expert Spell</button></div>
+        </details>
+      </div>
+
+      <div class="card span-12">
+        <h2>Equipment</h2>
+        <table id="tbl-equipment">
+          <tr><th>Name</th><th>Notes</th><th class="sr">Actions</th></tr>
+          <tr><td><input value="Multitool"/></td><td><input value="See talent"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="Shield"/></td><td><input value="+2 Defense when wielded (2 sp)"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="Toolkit"/></td><td><input value="—"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="Tinderbox"/></td><td><input value="—"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="Waterskin"/></td><td><input value="—"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="Provisions"/></td><td><input value="—"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="5 Torches"/></td><td><input value="—"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+          <tr><td><input value="Mail"/></td><td><input value="Defense 15 (15 sp)"/></td><td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td></tr>
+        </table>
+        <div style="margin-top:10px"><button class="secondary" onclick="addRow('tbl-equipment',2)">+ Add Item</button></div>
+      </div>
+    </section>
+
+    <div class="footer muted">Source: <a href="https://github.com/Dworrall21/War-For-The-Forbidden-City" target="_blank" rel="noopener">War‑For‑The‑Forbidden‑City repo</a>. This page stores changes in your browser (localStorage). Use Export buttons to copy out to Markdown or JSON.</div>
+  </div>
+
+<script>
+  // Helpers
+  function q(sel){return document.querySelector(sel)}
+  function rowsToObjects(tableId){
+    const table = q('#'+tableId)
+    const rows = [...table.querySelectorAll('tr')].slice(1)
+    return rows.map(r=>[...r.querySelectorAll('td')].slice(0,-1).map(td=>{
+      const t = td.querySelector('input,textarea'); return t? t.value.trim() : td.textContent.trim()
+    }))
+  }
+  function addRow(tableId, cols){
+    const tr = document.createElement('tr')
+    let html = ''
+    for(let i=0;i<cols;i++) html += `<td><input/></td>`
+    html += `<td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>`
+    tr.innerHTML = html
+    q('#'+tableId).appendChild(tr)
+  }
+  function delRow(btn){ btn.closest('tr').remove() }
+
+  function toData(){
+    return {
+      overview:{
+        name:q('#name').value, ancestry:q('#ancestry').value, level:+q('#level').value,
+        paths:q('#paths').value, traditions:q('#traditions').value, languages:q('#languages').value, profession:q('#profession').value
+      },
+      attributes: rowsToObjects('tbl-attributes').map(r=>({attribute:r[0], score:+r[1], mod:+r[2]})),
+      derived:{ health:+q('#health').value, healingRate:+q('#healingRate').value, defense:+q('#defense').value, speed:+q('#speed').value},
+      attacks: rowsToObjects('tbl-attacks').map(r=>({attack:r[0], attribute:r[1], boons:+r[2], damage:r[3], notes:r[4]})),
+      talents: rowsToObjects('tbl-talents').map(r=>({source:r[0], title:r[1], type:r[2], description:r[3]})),
+      spells:{
+        novice: rowsToObjects('tbl-spells-novice').map(r=>({tradition:r[0], spell:r[1], cast:+r[2], time:r[3], duration:r[4], effect:r[5]})),
+        expert: rowsToObjects('tbl-spells-expert').map(r=>({tradition:r[0], spell:r[1], cast:+r[2], time:r[3], duration:r[4], effect:r[5]})),
+        master: []
+      },
+      equipment: rowsToObjects('tbl-equipment').map(r=>({name:r[0], notes:r[1]}))
+    }
+  }
+
+  function toMarkdown(data){
+    const o = data.overview
+    let md = `# Character Sheet — ${o.name}\n\n`+
+      `### Character Overview\n\n`+
+      `| Field | Value |\n|---|---|\n`+
+      `| **Name** | ${o.name} |\n`+
+      `| **Ancestry** | ${o.ancestry} |\n`+
+      `| **Level** | ${o.level} |\n`+
+      `| **Paths** | ${o.paths} |\n`+
+      `| **Traditions** | ${o.traditions} |\n`+
+      `| **Languages** | ${o.languages} |\n`+
+      `| **Profession** | ${o.profession} |\n\n---\n\n`;
+
+    md += `### Attributes\n\n| Attribute | Score | Modifier |\n|---|---|---|\n`;
+    data.attributes.forEach(a=>{ md += `| ${a.attribute} | ${a.score} | ${a.mod >=0? "+"+a.mod:a.mod} |\n` })
+    md += `\n---\n\n### Derived Stats\n\n| Stat | Value |\n|---|---|\n| Health | ${data.derived.health} |\n| Healing Rate | ${data.derived.healingRate} |\n| Defense | ${data.derived.defense} |\n| Speed | ${data.derived.speed} |\n\n---\n\n`;
+
+    md += `### Attacks\n\n| Attack | Attribute | Boons | Damage | Notes |\n|---|---|---|---|---|\n`;
+    data.attacks.forEach(x=>{ md += `| ${x.attack} | ${x.attribute} | ${x.boons} | ${x.damage} | ${x.notes} |\n` })
+    md += `\n---\n\n`;
+
+    md += `### Talents\n\n| Source | Title | Type | Description |\n|---|---|---|---|\n`;
+    data.talents.forEach(t=>{ md += `| ${t.source} | ${t.title} | ${t.type} | ${t.description.replaceAll("\n"," ")} |\n` })
+    md += `\n---\n\n`;
+
+    function spellTable(level){
+      const arr = data.spells[level]
+      if(!arr || !arr.length) return ''
+      let s = `### ${level[0].toUpperCase()+level.slice(1)} Spells\n\n| Tradition | Spell | Casting | Time | Duration | Effect |\n|---|---|---|---|---|---|\n`
+      arr.forEach(sp=>{ s += `| ${sp.tradition} | ${sp.spell} | ${sp.cast} | ${sp.time} | ${sp.duration} | ${sp.effect.replaceAll("\n"," ")} |\n` })
+      return s+"\n"
+    }
+    md += spellTable('novice') + spellTable('expert') + spellTable('master')
+
+    md += `---\n\n### Equipment\n\n| Name | Notes |\n|---|---|\n`;
+    data.equipment.forEach(e=>{ md += `| ${e.name} | ${e.notes} |\n` })
+
+    return md
+  }
+
+  function save(){
+    const data = toData();
+    localStorage.setItem('egilhardt_boms_sheet', JSON.stringify(data))
+    alert('Saved to your browser.')
+    refreshPills(data)
+  }
+  function load(){
+    const raw = localStorage.getItem('egilhardt_boms_sheet')
+    if(!raw) return alert('No saved data found in this browser.')
+    const d = JSON.parse(raw)
+    // Simple loads for overview
+    q('#name').value = d.overview.name
+    q('#ancestry').value = d.overview.ancestry
+    q('#level').value = d.overview.level
+    q('#paths').value = d.overview.paths
+    q('#traditions').value = d.overview.traditions
+    q('#languages').value = d.overview.languages
+    q('#profession').value = d.overview.profession
+    q('#health').value = d.derived.health
+    q('#healingRate').value = d.derived.healingRate
+    q('#defense').value = d.derived.defense
+    q('#speed').value = d.derived.speed
+    // Rebuild dynamic tables
+    function rebuild(tableId, cols, arr, pick){
+      const table = q('#'+tableId)
+      table.querySelectorAll('tr:not(:first-child)').forEach(tr=>tr.remove())
+      arr.forEach(obj=>{
+        const tr = document.createElement('tr')
+        let html=''
+        const vals = pick(obj)
+        for(const v of vals){ html += `<td><input value="${String(v).replaceAll('"','&quot;')}"/></td>` }
+        html += `<td class="row-actions"><button class="secondary" onclick="delRow(this)">Del</button></td>`
+        tr.innerHTML = html
+        table.appendChild(tr)
+      })
+    }
+    rebuild('tbl-attributes',3,d.attributes,(o)=>[o.attribute,o.score,o.mod])
+    rebuild('tbl-attacks',5,d.attacks,(o)=>[o.attack,o.attribute,o.boons,o.damage,o.notes])
+    rebuild('tbl-talents',4,d.talents,(o)=>[o.source,o.title,o.type,o.description])
+    rebuild('tbl-spells-novice',6,d.spells.novice,(o)=>[o.tradition,o.spell,o.cast,o.time,o.duration,o.effect])
+    rebuild('tbl-spells-expert',6,d.spells.expert,(o)=>[o.tradition,o.spell,o.cast,o.time,o.duration,o.effect])
+    refreshPills(d)
+  }
+
+  function refreshPills(d=toData()){
+    q('#pill-ancestry').textContent = d.overview.ancestry || '—'
+    q('#pill-level').textContent = 'Level '+(d.overview.level||'—')
+  }
+
+  q('#btn-save').addEventListener('click', save)
+  q('#btn-load').addEventListener('click', load)
+  q('#btn-export-json').addEventListener('click', ()=>{
+    const blob = new Blob([JSON.stringify(toData(),null,2)], {type:'application/json'})
+    const url = URL.createObjectURL(blob)
+    const a = Object.assign(document.createElement('a'), {href:url, download:'egilhardt_boms.json'})
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url)
+  })
+  q('#btn-export-md').addEventListener('click', ()=>{
+    const blob = new Blob([toMarkdown(toData())], {type:'text/markdown'})
+    const url = URL.createObjectURL(blob)
+    const a = Object.assign(document.createElement('a'), {href:url, download:'Egilhardt Boms.md'})
+    document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url)
+  })
+
+</script>
+</body>
+</html>
