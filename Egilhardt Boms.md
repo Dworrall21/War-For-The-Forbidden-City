@@ -29,7 +29,7 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 18    | From ancestry/path 14+4                     |
+| Health          | 8/18    | From ancestry/path 14+4                     |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 15 (17 w/ shield) | Mail + shield               |
