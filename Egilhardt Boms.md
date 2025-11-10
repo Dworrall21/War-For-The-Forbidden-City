@@ -20,8 +20,8 @@
 |----------|-------|----------|
 | Strength | 12    | +2       |
 | Agility  | 10    | 0        |
-| Intellect| 9     | −1       |
-| Will     | 14    | +4       |
+| Intellect| 10     | 0       |
+| Will     | 15    | +5       |
 
 ---
 
@@ -29,13 +29,13 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 4/18    | From ancestry/path 14+4                     |
+| Health          | 26/26    | From ancestry/path 14+4+8                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 15 (17 w/ shield) | Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
-| Bonus Damage | 1d6 | Priest lvl 2|
+| Bonus Damage | 2d6 | Priest lvl 2, Spellfighter lvl 3|
 ---
 
 <details>
@@ -77,8 +77,12 @@
 
 ---
 
-#### ⚔️ Expert Path — — (Level —)
-- *(Future)*
+#### ⚔️ Expert Path — Spellfighter— (Level 3)
+- **Spell-Charged Weapon (Magical):** You can perform a ritual to imbue one weapon you touch for the entire performance with magical energy. When you finish, the weapon becomes charged until it’s destroyed or you use this talent again. Being charged in this way grants the following benefits: 
+  - While you hold the weapon, you impose 1 bane on rolls against your Defense.
+  - When you attack with the weapon, you can use the higher of your Intellect or Will score in place of the attribute you normally use to attack with the weapon.
+  - When you attack with the weapon, you roll to attack with 1 boon.
+  - When you get a critical success on an attack using the weapon, you roll to attack the target with 1 boon until the end of your next turn.
 
 ---
 
@@ -152,6 +156,6 @@
 
 | Tradition | Spell | Casting | Time | Duration | Effect |
 |-----------|-------|---------|------|----------|--------|
-| — | — | — | — | — | — |
+| Order | Dampen Magic | 1 | Reaction when a creature within 15 yards produces a magical effect | 1 minute |  You weaken the target’s connection to magic. For the duration, when the target would produce a magical effect, it makes a Will roll. On a failure, the magical effect is lost and any resources expended to use it are wasted. The target can overcome this effect with a success on a Will roll. |
 
 </details>
