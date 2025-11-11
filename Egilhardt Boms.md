@@ -118,6 +118,7 @@
 |-----------|-------------|------|-------------|
 | Psychomancy | Shielded Mind | Magical | If you are not injured and you lack the confused, controlled, stunned, and unconscious afflictions, you impose 1 bane on rolls against your Intellect and Will. |
 | Technomancy | Ultimate Tool | Magical | You have a magical tool that acts as a toolkit. You can transform it into any tool or one-/two-handed weapon. It grants 1 boon on relevant rolls. If lost, it returns in 1 hour. |
+| Order | Ordered Mind | Magical | You can use this talent when you become confused, controlled, stunned, Intellect impaired, or Will impaired. The affliction ends. You can use this talent once, twice at level 3, and three times at level 7. |
 
 📝 **Notes:**  
 - Talents are gained automatically with the tradition.  
