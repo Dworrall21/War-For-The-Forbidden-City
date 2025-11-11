@@ -46,7 +46,7 @@
 | Melee (Multitool Axe) | Will | 1 | 3d6 | 2-Hand, Brutal, Large, Slow |
 | Melee (Multitool Polearm) | Will | 1 | 3d6 | 2-Hand, Long, Slow |
 | Melee (Multitool Flail) | Will | 1 | 2d6 | Bludgeoning, Disarming, Slow |
-| Melee (Multitool Longsword) | Will | 1 | 2d6 | Slashing, Slow, Versatile |
+| Melee (Multitool Greatsword) | Will | 1 | 4d6 | Slashing, Slow |
 | Ranged (Crossbow) | Agility | 0 | 2d6 | Brutal, Large, Reload, Range 20 |
 
 **Boons:** —  
@@ -135,6 +135,9 @@
 |-----------|-------|---------|------|----------|--------|
 | Psychomancy | *Dancing Weapon* | 3 | Action | 1 min | The target weapon leaps into the air and hovers there. When you cast the spell and at the start of each of your turns if you lack the confused, controlled, stunned, and unconscious afflictions, you can move the target weapon up to 10 yards. If you move the target more than 10 yards away from you, the spell ends early and the weapon falls to the ground. You can attack with the target weapon as if you were holding it, but you use Will in place of the attribute you normally use and the attack deals an extra 2d6 damage. Finally, until the spell ends, the target counts as an off-hand weapon for the purpose of attacking with two weapons. |
 | Psychomancy | Mental Stowaway | 1 | Action | 24 hr | Int vs target Will. On success, know location for 24h and can perceive from their body. Gain 1 boon vs them. On fail regain use after 1 minute. |
+| Psychomancy | Levitate | 3 | Action | 1 Minute | Up to three creatures or objects inside one Size 5 space within 15 yards. Each target rises 2 yards into the air and hangs in place. An unwilling target makes a Strength roll. On a success, the target ignores the effect. An affected target is Strength impaired, Agility impaired, and vulnerable until the spell ends. The target can move only by crawling and then only if it can reach a surface. On each of your turns, you can use an action to raise or lower the target by up to 2 yards.
+
+ |
 
 </details>
 
