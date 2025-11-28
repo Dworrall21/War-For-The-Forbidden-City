@@ -6,8 +6,8 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 2                        |
-| **Paths**   | Priest                   |
+| **Level**   | 3                        |
+| **Paths**   | Priest, Spellfighter                  |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
 | **Profession** | Mercenary              |
@@ -32,7 +32,7 @@
 | Health          | 26/26    | From ancestry/path 14+4+8                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
-| Defense         | 15 (17 w/ shield) | Mail + shield               |
+| Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
 | Bonus Damage | 2d6 | Priest lvl 2, Spellfighter lvl 3|
@@ -118,7 +118,7 @@
 |-----------|-------------|------|-------------|
 | Psychomancy | Shielded Mind | Magical | If you are not injured and you lack the confused, controlled, stunned, and unconscious afflictions, you impose 1 bane on rolls against your Intellect and Will. |
 | Technomancy | Ultimate Tool | Magical | You have a magical tool that acts as a toolkit. You can transform it into any tool or one-/two-handed weapon. It grants 1 boon on relevant rolls. If lost, it returns in 1 hour. |
-| Order | Ordered Mind | Magical | You can use this talent when you become confused, controlled, stunned, Intellect impaired, or Will impaired. The affliction ends. You can use this talent once, twice at level 3, and three times at level 7. |
+| Order | Certain Outcome | Magical | You can use a reaction when you make an attribute roll. Rather than roll the dice, you calculate the result as if you had rolled a 20 on the die. You can use this talent once, twice at level 3, and three times at level 7. You regain expended uses after you rest. |
 
 📝 **Notes:**  
 - Talents are gained automatically with the tradition.  
@@ -136,7 +136,7 @@
 |-----------|-------|---------|------|----------|--------|
 | Psychomancy | *Dancing Weapon* | 3 | Action | 1 min | The target weapon leaps into the air and hovers there. When you cast the spell and at the start of each of your turns if you lack the confused, controlled, stunned, and unconscious afflictions, you can move the target weapon up to 10 yards. If you move the target more than 10 yards away from you, the spell ends early and the weapon falls to the ground. You can attack with the target weapon as if you were holding it, but you use Will in place of the attribute you normally use and the attack deals an extra 2d6 damage. Finally, until the spell ends, the target counts as an off-hand weapon for the purpose of attacking with two weapons. |
 | Psychomancy | Mental Stowaway | 1 | Action | 24 hr | Int vs target Will. On success, know location for 24h and can perceive from their body. Gain 1 boon vs them. On fail regain use after 1 minute. |
-| Psychomancy | Levitate | 3 | Action | 1 Minute | Up to three creatures or objects inside one Size 5 space within 15 yards. Each target rises 2 yards into the air and hangs in place. An unwilling target makes a Strength roll. On a success, the target ignores the effect. An affected target is Strength impaired, Agility impaired, and vulnerable until the spell ends. The target can move only by crawling and then only if it can reach a surface. On each of your turns, you can use an action to raise or lower the target by up to 2 yards.
+| Psychomancy | Levitate | 1  | Action | 1 Minute | Up to three creatures or objects inside one Size 5 space within 15 yards. Each target rises 2 yards into the air and hangs in place. An unwilling target makes a Strength roll. On a success, the target ignores the effect. An affected target is Strength impaired, Agility impaired, and vulnerable until the spell ends. The target can move only by crawling and then only if it can reach a surface. On each of your turns, you can use an action to raise or lower the target by up to 2 yards.
 
  |
 
