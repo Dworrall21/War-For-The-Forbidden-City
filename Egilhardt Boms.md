@@ -11,7 +11,7 @@
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
 | **Profession** | Mercenary              |
-
+30s 5 horses and tack 2s of baubles
 ---
 
 ### 🧍 Attributes
@@ -29,7 +29,7 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 26/26    | From ancestry/path 14+4+8                    |
+| Health          | 26/26  5/22  | From ancestry/path 14+4+8                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
