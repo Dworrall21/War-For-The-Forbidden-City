@@ -6,7 +6,7 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 3                        |
+| **Level**   | 4                        |
 | **Paths**   | Priest, Spellfighter                  |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
@@ -29,7 +29,7 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 26/26  5/22  | From ancestry/path 14+4+8                    |
+| Health          | 34/34  5/22  | From ancestry/path 14+4+8+8                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
@@ -77,13 +77,13 @@
 
 ---
 
-#### ⚔️ Expert Path — Spellfighter— (Level 3)
+#### ⚔️ Expert Path — Spellfighter— (Level 4)
 - **Spell-Charged Weapon (Magical):** You can perform a ritual to imbue one weapon you touch for the entire performance with magical energy. When you finish, the weapon becomes charged until it’s destroyed or you use this talent again. Being charged in this way grants the following benefits: 
   - While you hold the weapon, you impose 1 bane on rolls against your Defense.
   - When you attack with the weapon, you can use the higher of your Intellect or Will score in place of the attribute you normally use to attack with the weapon.
   - When you attack with the weapon, you roll to attack with 1 boon.
   - When you get a critical success on an attack using the weapon, you roll to attack the target with 1 boon until the end of your next turn.
-
+- **Spellstrike:** When you cast a spell, the next attack you make before the end of your next turn deals extra damage. You deal an extra 1d6 damage if you cast a novice spell, 2d6 for an expert spell, or 3d6 for a master spell.
 ---
 
 #### 🧠 Master Path — — (Level —)
