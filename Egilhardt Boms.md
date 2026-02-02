@@ -29,13 +29,19 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 38    | From ancestry/path                      |
-| Healing Rate    | 3     | floor(14 / 4)                           |
+| Health          | 38 - 17  | From ancestry/path                      |
+| Bonus Damage Dice    | 2d6     | From anecstry/path                          |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 16 (18 w/ shield) | Plate Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
 
+# Notes
+Sir Ludolf says mercs can't be trusted and Rosenfelds intends for us to die
+<br>
+Sir Galmar talks about magickers
+<br>
+Sir Otho talks about siege engines
 ---
 
 <details>
@@ -169,7 +175,7 @@
 | Tradition | Spell | Amount | Casting | Duration | Effect |
 | :--- | :--- | :---: | :--- | :--- | :--- |
 | **Evocation** | Bolstering Syllable | 1 at lvl 1, 2 at lvl 3, or 4 at lvl 7 | No action | Instantaneous | Target each creature in a Size 3 space (whisper), Size 10 (speak), or Size 60 (shout). Targets make attribute rolls with 1, 2, or 3 boons respectively until the end of your next turn. |
-| **Divination** | Experience Revelations | 1 | Ritual | Special | Target: You. Roll three $d20$ and record results. Replace any $d20$ roll with one of these results before the spell ends. Ends when all are used or recast. |
+| **Divination** | Experience Revelations | 1 | Ritual | Special | Target: You. Roll three $d20$ and record results. Replace any $d20$ roll with one of these results before the spell ends. Ends when all are used or recast. Results 18, 13, 13|
 | **Skullduggery** | Invisibility | 3 | Action | 1 hour | Target: You. You become invisible. Ends early if you harm another creature. |
 | **Divination** | Eavesdrop | 3 | Action | 1 hour | Target: One Size $1/2$ space within 30 yards. You hear from the target space as if you were there. |
 | **War** | Martial Insights | 1 | Reaction | 1 minute | Target: You. Impose 1 bane on attacks against you and increase Bonus Damage dice supply by 2. |
