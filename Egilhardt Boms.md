@@ -6,7 +6,7 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 1                        |
+| **Level**   | 5                        |
 | **Paths**   | Priest                   |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
@@ -29,10 +29,10 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 14    | From ancestry/path                      |
+| Health          | 38    | From ancestry/path                      |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
-| Defense         | 15 (17 w/ shield) | Mail + shield               |
+| Defense         | 16 (18 w/ shield) | Plate Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
 
@@ -71,12 +71,18 @@
   - **Holy Smite:** On a successful attack, deal an extra 3d6 damage.  
   - **Holy Healing:** Heal yourself or one ally within 5 yd for 3d6.  
   - **Holy Denunciation:** Present your holy symbol; Will vs target’s Will (1 boon vs supernatural). On success, target becomes *Held* (luck ends).
+- **Shared Recovery:** You can use an action to heal half your damage total and enable one other creature within 5 yards to healhalf their damage total. Once you use this talent, you lose accessto it until after you rest.
+- **Divine Favor:** You make luck rolls with 1 boon.
 
 ---
 
 #### ⚔️ Expert Path — — (Level —)
-- *(Future)*
-
+- **Spell-Charged Weapon (Magical):** You can perform a ritual to imbue one weapon you touch for the entire performance with magical energy. When you finish, the weapon becomes charged until it’s destroyed or you use this talent again. Being charged in this way grants the following benefits:
+- While you hold the weapon, you impose 1 bane on rolls against your Defense.
+- When you attack with the weapon, you can use the higherof your Intellect or Will score in place of the attribute you normally use to attack with the weapon.
+- When you attack with the weapon, you roll to attack with1 boon.
+- When you get a critical success on an attack using the weapon, you roll to attack the target with 1 boon until theend of your next turn.
+- **Spellstrike:** When you cast a spell, the next attack you makebefore the end of your next turn deals extra damage. You deal an extra 1d6 damage if you cast a novice spell, 2d6 for an expert spell, or 3d6 for a master spell.
 ---
 
 #### 🧠 Master Path — — (Level —)
@@ -128,6 +134,7 @@
 |-----------|-------|---------|------|----------|--------|
 | Psychomancy | *Dancing Weapon* | 3 | Action | 1 min | Target weapon hovers, can attack using Will, +2d6 dmg, counts as off-hand. Ends if >10 yd away. |
 | Psychomancy | Mental Stowaway | 1 | Action | 24 hr | Int vs target Will. On success, know location for 24h and can perceive from their body. Gain 1 boon vs them. |
+| Psychomancy | Levitation | 1 | Action | 24 hr | Up to three creatures or objects inside one Size 5 space within 15 yards. Each target rises 2 yards into the air and hangs in place. An unwilling target makes a Strength roll. On a success, the target ignores the effect. An affected target is Strength impaired, Agility impaired, and vulnerable until the spell ends. The target can move only by crawling and then only if it can reach a surface. On each of your turns, you can use an action to raise or lower the target by up to 2 yards.|
 
 </details>
 
@@ -152,3 +159,20 @@
 | — | — | — | — | — | — |
 
 </details>
+
+---
+
+<details>
+
+<summary><strong>Gizmo Spells: Two Per Casting</strong></summary>
+
+| Tradition | Spell | Amount | Casting | Duration | Effect |
+| :--- | :--- | :---: | :--- | :--- | :--- |
+| **Evocation** | Bolstering Syllable | 1 at lvl 1, 2 at lvl 3, or 4 at lvl 7 | No action | Instantaneous | Target each creature in a Size 3 space (whisper), Size 10 (speak), or Size 60 (shout). Targets make attribute rolls with 1, 2, or 3 boons respectively until the end of your next turn. |
+| **Divination** | Experience Revelations | 1 | Ritual | Special | Target: You. Roll three $d20$ and record results. Replace any $d20$ roll with one of these results before the spell ends. Ends when all are used or recast. |
+| **Skullduggery** | Invisibility | 3 | Action | 1 hour | Target: You. You become invisible. Ends early if you harm another creature. |
+| **Divination** | Eavesdrop | 3 | Action | 1 hour | Target: One Size $1/2$ space within 30 yards. You hear from the target space as if you were there. |
+| **War** | Martial Insights | 1 | Reaction | 1 minute | Target: You. Impose 1 bane on attacks against you and increase Bonus Damage dice supply by 2. |
+</details>
+
+---
