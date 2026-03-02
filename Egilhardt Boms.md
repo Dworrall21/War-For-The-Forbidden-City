@@ -29,13 +29,13 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 34/34  30  | From ancestry/path 14+4+8+8                    |
+| Health          | 34/34  30  | From ancestry/path 14+4+8+8+4                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
-| Bonus Damage | 2d6 | Priest lvl 2, Spellfighter lvl 3|
+| Bonus Damage | 2d6 | Priest lvl 5, Spellfighter lvl 3|
 ---
 
 <details>
@@ -161,5 +161,12 @@
 | Tradition | Spell | Casting | Time | Duration | Effect |
 |-----------|-------|---------|------|----------|--------|
 | Order | Dampen Magic | 1 | Reaction when a creature within 15 yards produces a magical effect | 1 minute |  You weaken the target’s connection to magic. For the duration, when the target would produce a magical effect, it makes a Will roll. On a failure, the magical effect is lost and any resources expended to use it are wasted. The target can overcome this effect with a success on a Will roll. |
+
+</details>
+<summary>🧠 <strong>Gizmo Spells</strong></summary>
+
+| Tradition | Spell | Casting | Time | Duration | Effect |
+|-----------|-------|---------|------|----------|--------|
+| Evocation | Bolstering Syllable | 1 at level 1, 2 at level 3, or 4 at level 7 | No action | Instantaneous | Target each creature in a Size 3 space centered on you if you whisper, a Size 10 space if you speak, or a Size 60 space if you shout. The sound you make uplifts those who hear you. Until the end of your next turn, a target makes attribute rolls with 1 boon if you whispered, 2 boons if you spoke, or 3 boons if you shouted. | | Divination | Experience Revelations | 1 | Ritual | Special | Target You. You consult your implements of divination to gain insights about the future. When you finish the ritual, roll a d20 three times and note the number rolled on each die. At any time before you cast this spell again, you can expend one roll to replace the number rolled on a d20 with the number you expended. The spell ends when you expend the last roll or when you cast the spell again. | | Skullduggery | Invisibility | 3 | Action | 1 hour | Target You. Your appearance washes away until you become invisible. The spell ends early if you harm another creature. | | Divination | Eavesdrop | 3 | Action | 1 hour | Target One Size 1/2 space within 30 yards; you need neither line of effect nor line of sight to the target. Your ears pop as they adjust to the spell’s effects. You hear from the target space as if you were there instead of wherever you happen to be. | | War | Martial Insights | 1 | Reaction | 1 minute | Target You. You enhance your fighting instincts. You impose 1 bane on rolls to attack you and you increase your supply of Bonus Damage dice by 2. |
 
 </details>
