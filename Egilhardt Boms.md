@@ -6,7 +6,7 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 4                        |
+| **Level**   | 5                        |
 | **Paths**   | Priest, Spellfighter                  |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
