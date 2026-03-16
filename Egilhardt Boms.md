@@ -6,7 +6,7 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 5                        |
+| **Level**   | 6                        |
 | **Paths**   | Priest, Spellfighter                  |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
@@ -29,7 +29,7 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 22-34/38   | From ancestry/path 14+4+8+8+4                    |
+| Health          | 46   | From ancestry/path 14+4+8+8+4                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
@@ -84,6 +84,7 @@
   - When you attack with the weapon, you roll to attack with 1 boon.
   - When you get a critical success on an attack using the weapon, you roll to attack the target with 1 boon until the end of your next turn.
 - **Spellstrike:** When you cast a spell, the next attack you make before the end of your next turn deals extra damage. You deal an extra 1d6 damage if you cast a novice spell, 2d6 for an expert spell, or 3d6 for a master spell.
+- **Battle Casting:** When you use an action to attack, you can also cast a novice spell as part of the attack, provided you can expend a casting to do so. Casting a spell in this way triggers additional effects from your Spellstrike talent. Once you use this talent, you lose access to it (luck ends).
 ---
 
 #### 🧠 Master Path — — (Level —)
