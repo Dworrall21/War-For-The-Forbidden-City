@@ -162,6 +162,8 @@
 | Tradition | Spell | Casting | Time | Duration | Effect |
 |-----------|-------|---------|------|----------|--------|
 | Order | Dampen Magic | 1 | Reaction when a creature within 15 yards produces a magical effect | 1 minute |  You weaken the target’s connection to magic. For the duration, when the target would produce a magical effect, it makes a Will roll. On a failure, the magical effect is lost and any resources expended to use it are wasted. The target can overcome this effect with a success on a Will roll. |
+| Order | Mitigate Risk | 1 | reaction when you start your turn | 1 minute |  While you lack the confused, controlled, stunned, and unconscious affliction, you can add or subtract 5 from the result of one luck roll made by a creature within 5 yards of you. Once you use this benefit, you lose access to it until you start your next turn |
+
 
 </details>
 <summary>🧠 <strong>Gizmo Spells</strong></summary>
