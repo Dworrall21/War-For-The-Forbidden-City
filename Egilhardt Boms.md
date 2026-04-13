@@ -6,8 +6,8 @@
 |-------------|---------------------------|
 | **Name**    | Egilhardt Boms           |
 | **Ancestry**| Human                    |
-| **Level**   | 6                        |
-| **Paths**   | Priest, Spellfighter                  |
+| **Level**   | 7                        |
+| **Paths**   | Priest, Spellfighter,twinstriker                  |
 | **Traditions** | Psychomancy, Technomancy |
 | **Languages** | Common, (choose), (choose) |
 | **Profession** | Mercenary              |
@@ -19,9 +19,9 @@
 | Attribute | Score | Modifier |
 |----------|-------|----------|
 | Strength | 12    | +2       |
-| Agility  | 10    | 0        |
-| Intellect| 10     | 0       |
-| Will     | 15    | +5       |
+| Agility  | 11    | +1        |
+| Intellect| 11     | +1       |
+| Will     | 16    | +6       |
 
 ---
 
@@ -29,7 +29,7 @@
 
 | Stat            | Value | Notes                                    |
 |-----------------|-------|------------------------------------------|
-| Health          | 46   | From ancestry/path 14+4+8+8+4+8                    |
+| Health          | 46   | From ancestry/path 14+4+8+8+4+8+18                    |
 | Healing Rate    | 3     | floor(14 / 4)                           |
 | Natural Defense | 9     | Armorless base                          |
 | Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
@@ -88,8 +88,18 @@
 ---
 
 #### 🧠 Master Path — — (Level —)
-- *(Future)*
+- **Two-Weapon Mastery:** You gain the Dual Wielder talent from 
+the fighter path if you don’t have this talent already. If you 
+do, you treat one-handed weapons as if they were offhanded weapons.
 
+-**Twin Strike:** When you get a success with an attack made 
+using an off-hand weapon, your attack deals an extra 1d6 
+damage.
+
+**Dual Wielder:** You can use a reaction to attack with a 
+weapon you wield in your off-hand when you attack.
+At level 5, you impose 1 bane on rolls to attack you while you 
+wield two weapons, one in each hand
 </details>
 
 ---
