@@ -35,7 +35,7 @@
 | Defense         | 16 (18 w/ shield) | Plate and Mail + shield               |
 | Speed           | 5     |                                        |
 | Size            | 1     |                                        |
-| Bonus Damage | 2d6 | Priest lvl 5, Spellfighter lvl 3|
+| Bonus Damage | 3d6 | Priest lvl 5, Spellfighter lvl 3, Twinstriker 7|
 ---
 
 <details>
