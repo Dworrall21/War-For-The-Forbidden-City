@@ -629,101 +629,13 @@
     $('#printBtn').addEventListener('click', () => window.print());
 
     hydrate({
-      identity: {
-        name: 'Egilhardt Boms',
-        player: '',
-        level: 7,
-        xp: 0,
-        ancestry: 'Human',
-        profession: 'Mercenary',
-        languages: 'Common, (choose), (choose)',
-        background: '',
-        novicePath: 'Priest',
-        expertPath: 'Spellfighter',
-        masterPath: 'Twinstriker',
-        allies: '',
-        enemies: ''
-      },
-      attributes: [
-        ['Strength', 12, 2],
-        ['Agility', 11, 1],
-        ['Intellect', 11, 1],
-        ['Will', 16, 6]
-      ],
-      stats: {
-        health: 64,
-        damage: 0,
-        healingRate: 3,
-        defense: 16,
-        speed: 5,
-        power: 0,
-        fortune: 0,
-        size: '1',
-        defenseNotes: 'Natural Defense 9. Defense 18 while wielding shield. Plate and Mail + shield.',
-        conditions: '',
-        wealth: '30s, 5 horses and tack, 2s of baubles'
-      },
-      attacks: [
-        ['Melee (Multitool Axe)', 'Will', '1 boon', '3d6', '2-Hand, Brutal, Large, Slow'],
-        ['Melee (Multitool Polearm)', 'Will', '1 boon', '3d6', '2-Hand, Long, Slow'],
-        ['Melee (Multitool Flail)', 'Will', '1 boon', '2d6', 'Bludgeoning, Disarming, Slow'],
-        ['Melee (Multitool Greatsword)', 'Will', '1 boon', '4d6', 'Slashing, Slow'],
-        ['Ranged (Crossbow)', 'Agility', '0', '2d6', 'Brutal, Large, Reload, Range 20']
-      ],
-      armor: [
-        ['Mail', 'Defense 15 (15 sp)'],
-        ['Shield', '+2 Defense when wielded (2 sp)']
-      ],
-      talents: [
-        ['Ancestry (Human)', 'Ability Increases', 'Passive', '+1 to two different attributes.'],
-        ['Priest', 'Prayer', 'Reaction', 'Use a reaction when you or a creature within 5 yd makes an attribute roll to grant 1 boon. Luck ends afterward.'],
-        ['Priest', 'Holy Symbol', 'Charged', 'Holy Smite (+3d6 on a successful attack), Holy Healing (heal 3d6), Holy Denunciation (Will vs Will; on success target is Held).'],
-        ['Priest', 'Shared Recovery', 'Action', 'Heal half your damage total and one creature within 5 yards heals half their damage total; refreshes after rest.'],
-        ['Spellfighter', 'Spell-Charged Weapon', 'Magical', 'Imbued weapon imposes 1 bane on attacks against your Defense; attack with higher of Intellect/Will; attack rolls get 1 boon; critical grants follow-up boon.'],
-        ['Spellfighter', 'Spellstrike', 'Passive', 'After casting, your next attack by end of next turn deals extra damage (1d6 novice, 2d6 expert, 3d6 master).'],
-        ['Spellfighter', 'Battle Casting', 'Action', 'When you attack, you can also cast a novice spell as part of the attack by expending a casting.'],
-        ['Twinstriker', 'Two-Weapon Mastery', 'Passive', 'Gain Dual Wielder if you do not have it; otherwise treat one-handed weapons as off-hand.'],
-        ['Twinstriker', 'Twin Strike', 'Passive', 'When you succeed with an off-hand weapon attack, deal an extra 1d6 damage.'],
-        ['Twinstriker', 'Dual Wielder', 'Reaction', 'Use a reaction to attack with an off-hand weapon when you attack; at level 5, impose 1 bane on attacks against you while dual-wielding.'],
-        ['Psychomancy', 'Shielded Mind', 'Tradition Talent', 'If uninjured and not confused/controlled/stunned/unconscious, impose 1 bane on rolls against your Intellect and Will.'],
-        ['Technomancy', 'Ultimate Tool', 'Tradition Talent', 'Magical tool acts as toolkit and transformable weapon/tool; grants 1 boon on relevant rolls; returns in 1 hour if lost.'],
-        ['Order', 'Certain Outcome', 'Tradition Talent', 'Use reaction on your attribute roll: treat die as 20. Uses increase with level (up to 3 at level 7).']
-      ],
-      traditions: [
-        ['Psychomancy', 'Known', '3', 'Primary tradition'],
-        ['Technomancy', 'Known', '1+', 'Includes Gizmo and utility magic'],
-        ['Order', 'Known', '2', 'Master-level control effects']
-      ],
-      noviceSpells: [
-        ['Psychomancy', 'Dancing Weapon', 'Novice', 'Action', '1 min', 'Target weapon hovers; move it up to 10 yards; attack with Will and +2d6 damage; counts as off-hand weapon.'],
-        ['Psychomancy', 'Mental Stowaway', 'Novice', 'Action', '24 hr', 'Int vs target Will. On success, know location and perceive from target for 24h; gain 1 boon vs target.'],
-        ['Psychomancy', 'Levitate', 'Novice', 'Action', '1 minute', 'Up to three creatures/objects in Size 5 space rise 2 yards; unwilling targets make Strength roll to resist.']
-      ],
-      advancedSpells: [
-        ['Technomancy', 'Gizmo', 'Expert', 'Action', '8 hr', 'Create device with two novice spells and full castings; grants 1 boon while at least one casting remains.'],
-        ['Order', 'Dampen Magic', 'Master', 'Reaction', '1 minute', 'Target creature within 15 yards must make Will roll to produce magical effects or lose them.'],
-        ['Order', 'Mitigate Risk', 'Master', 'Reaction', '1 minute', 'Add or subtract 5 from one luck roll made by creature within 5 yards, once per turn while unaffected.'],
-        ['Evocation', 'Bolstering Syllable (Gizmo)', 'Novice', 'No action', 'Instantaneous', 'Targets in area gain boons on attribute rolls until end of your next turn based on whisper/speak/shout.'],
-        ['Divination', 'Experience Revelations (Gizmo)', 'Novice', 'Ritual', 'Special', 'Roll three d20s when ritual completes; later expend one to replace a d20 roll.'],
-        ['Skullduggery', 'Invisibility (Gizmo)', 'Novice', 'Action', '1 hour', 'Target you become invisible; spell ends early if you harm another creature.'],
-        ['Divination', 'Eavesdrop (Gizmo)', 'Novice', 'Action', '1 hour', 'Hear from target space within 30 yards as if you were there.'],
-        ['War', 'Martial Insights (Gizmo)', 'Novice', 'Reaction', '1 minute', 'Impose 1 bane on attacks against you and increase Bonus Damage dice by 2.']
-      ],
-      equipment: [
-        ['Multitool', '1', '—', 'See Ultimate Tool talent'],
-        ['Shield', '1', '2 sp', '+2 Defense when wielded'],
-        ['Toolkit', '1', '—', ''],
-        ['Tinderbox', '1', '—', ''],
-        ['Waterskin', '1', '—', ''],
-        ['Provisions', '1', '—', ''],
-        ['Torches', '5', '—', ''],
-        ['Mail', '1', '15 sp', 'Defense 15']
-      ],
-      notes: {
-        goals: 'Use faith and technomancy to survive the Weird Wizard’s dangers and protect allies.',
-        factions: 'ER benchmarks: 14, 17, 19.',
-        session: 'Bonus Damage pool references: Priest level 5, Spellfighter level 3, Twinstriker level 7.'
-      }
+      attacks: [['Longsword', 'Strength', '0', '2d6', 'Melee, Versatile']],
+      armor: [['Leather Armor', 'Defense 12']],
+      talents: [['Ancestry', 'Example Talent', 'Passive', 'Describe effect and trigger.']],
+      traditions: [['Technomancy', '3', '2', 'Utility focus']],
+      noviceSpells: [['Technomancy', 'Gizmo', '1', 'Action', '1 hour', 'Create a small magical device.']],
+      equipment: [['Rations', '3', '—', '']],
+      notes: { goals: 'Protect the border village.', session: 'Session 1 notes...' }
     });
   </script>
 </body>
