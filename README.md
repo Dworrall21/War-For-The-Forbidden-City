@@ -60,6 +60,7 @@ This repository contains quick references, character sheets, equipment lists, an
 ## 👤 Characters
 
 - [Egilhardt Boms](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/38361874d8dc02ed782ca66e3302feb5f1c69ab7/Egilhardt%20Boms.md)
+- [Character Sheet (HTML)](https://github.com/Dworrall21/War-For-The-Forbidden-City/blob/main/Character.html)
 
 ---
 
