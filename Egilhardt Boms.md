@@ -47,6 +47,7 @@
 | Melee (Multitool Polearm) | Will | 1 | 3d6 | 2-Hand, Long, Slow |
 | Melee (Multitool Flail) | Will | 1 | 2d6 | Bludgeoning, Disarming, Slow |
 | Melee (Multitool Greatsword) | Will | 1 | 4d6 | Slashing, Slow |
+| Flaming Longsword | Strength | 1 | 3d6 | Slashing, 2d6 Fire Damage |
 | Ranged (Crossbow) | Agility | 0 | 2d6 | Brutal, Large, Reload, Range 20 |
 
 **Boons:** —  
